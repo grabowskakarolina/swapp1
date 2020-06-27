@@ -1,0 +1,560 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #dddddd;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.blue-text {
+  color: #007E62;
+}
+
+.wrapper {
+  max-width: 2560px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #007E62;
+}
+
+.scroll-fix::before {
+  display: block;
+  margin-top: -66px;
+  height: 66px;
+  content: '';
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+.jumbotron {
+  margin: 0;
+}
+
+nav {
+  text-transform: uppercase;
+  -webkit-transition: background-color .8s;
+  transition: background-color .8s;
+  position: relative;
+  background-color: #007e62;
+  height: 50px;
+}
+
+nav a, nav i {
+  color: silver;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+nav a:hover {
+  color: #ffa400;
+}
+
+nav i {
+  padding: 10px;
+}
+
+.picture {
+  margin: 0 0 0 20px;
+  width: 80px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+header {
+  color: silver;
+  overflow: hidden;
+}
+
+header h1 {
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+header .hand-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/pani.jpg");
+  background-position: center;
+  background-size: fixed;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+header .hand-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -10;
+}
+
+header .hand-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header p {
+  padding: 10px;
+  font-size: 20px;
+}
+
+header .btn-outline-light {
+  text-transform: uppercase;
+}
+
+header .fa-chevron-down {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 30px;
+}
+
+header #arow {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 30px;
+}
+
+img {
+  position: relative;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+aside {
+  position: absolute;
+  left: -300px;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  font-size: 24px;
+  color: black;
+  background-color: white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+li {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.active {
+  left: 0;
+}
+
+button {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  margin: 0 30px 10px;
+  padding: 10px 30px 10px;
+  width: 30px;
+  height: 40px;
+}
+
+#aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #007E62;
+}
+
+#aboutus h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#aboutus p {
+  font-size: 14px;
+}
+
+#aboutus .about-hover {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+#aboutus .about-hover:hover {
+  color: #3733A6;
+}
+
+#aboutus .widok {
+  width: 400px;
+  height: 400px;
+}
+
+#about-hero {
+  color: silver;
+  overflow: hidden;
+}
+
+#about-hero .jumbotron {
+  position: relative;
+  padding: 60px 0;
+  background-image: url("../img/ziemia.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+#about-hero .jumbotron h2 {
+  font-size: 32px;
+  color: #dddddd;
+}
+
+#about-hero .jumbotron i {
+  font-size: 35px;
+  color: #ffa400;
+}
+
+#about-hero .jumbotron p {
+  font-size: 14px;
+}
+
+#about-hero .about-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -10;
+}
+
+#about-hero .about-shadow .about-hero-item {
+  margin: 10px 0;
+}
+
+#offert .jumbotron {
+  background-color: #f9f9f9;
+}
+
+#offert .offert-wrap {
+  max-width: 2560px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#offert .offert-box {
+  margin: 20px 10px;
+  padding: 30px;
+  background-color: #ffffffa9;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+#offert .offert-box h3 {
+  text-transform: uppercase;
+}
+
+#offert .offert-box i {
+  padding: 0 5px;
+  font-size: 23px;
+  color: #007e62;
+}
+
+#offert .offert-box span {
+  font-weight: bold;
+}
+
+#offert .offert-box button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+#offert .offert-box button .offert {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#offert .offert-box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#offert .offert-text {
+  margin-top: 30px;
+}
+
+.d-block {
+  height: 90vh;
+  width: 100vh;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #007e62;
+  -webkit-transition: color 200ms;
+  transition: color 200ms;
+}
+
+a:hover {
+  color: #ffa400;
+}
+
+.form-group {
+  margin: 0;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f3e7e9), color-stop(99%, #007e62), to(#007e62));
+  background-image: linear-gradient(to top, #f3e7e9 0%, #007e62 99%, #007e62 100%);
+  overflow: hidden;
+}
+
+.form-group .login-box {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  width: 400px;
+  -webkit-box-shadow: 0 25px 35px rgba(0, 126, 98, 0.15);
+          box-shadow: 0 25px 35px rgba(0, 126, 98, 0.15);
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 11vh 5vh 7vh;
+  border-radius: 10px;
+}
+
+.form-group h2 {
+  margin: 0 0 0.9vh;
+  font-size: 1.4rem;
+  color: #4d4d4d;
+}
+
+.form-group h2 p {
+  margin: 0 0 3vh;
+  font-size: 0.8rem;
+  color: #999999;
+}
+
+.form .form--input-box {
+  position: relative;
+  text-align: left;
+  margin: 0 2vh 3vh;
+}
+
+.form .form--input-box::after, .form .form--input-box::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.form .form--input-box::after::before, .form .form--input-box::before::before {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffa400), color-stop(99%, #007e62), to(#007e62));
+  background-image: linear-gradient(to right, #ffa400 0%, #007e62 99%, #007e62 100%);
+  right: 100%;
+  z-index: 2;
+  -webkit-transition: right 500ms;
+  transition: right 500ms;
+}
+
+.form .form--input-box::after::before input, .form .form--input-box::before::before input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  line-height: 1.9;
+  outline: transparent;
+  margin-top: 2vh;
+}
+
+.form .form--input-box::after::before label, .form .form--input-box::before::before label {
+  position: relative;
+  top: 23px;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: top 200ms, font-size 200ms;
+  transition: top 200ms, font-size 200ms;
+}
+
+.form .form--input-box::after::before.focused::before, .form .form--input-box::before::before.focused::before {
+  right: 0;
+}
+
+.form .form--input-box::after::before.focused::before:not(.active) label, .form .form--input-box::before::before.focused::before:not(.active) label {
+  top: 0;
+  font-size: 0.7rem;
+}
+
+.form .form--input-box::after::before.active label, .form .form--input-box::before::before.active label {
+  top: 0;
+  font-size: 0.7rem;
+}
+
+.form .form--input-box .form--options {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.5fr;
+      grid-template-columns: 1fr 1.5fr;
+  font-size: 0.7rem;
+  text-align: left;
+}
+
+.form .form--input-box .form--options div:last-of-type {
+  text-align: right;
+}
+
+.button1 {
+  position: relative;
+  width: 130px;
+  height: 50px;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffa400), color-stop(99%, #007e62), to(#007e62));
+  background-image: linear-gradient(to right, #ffa400 0%, #007e62 99%, #007e62 100%);
+  color: white;
+  font-size: 1.2rem;
+  padding: 0 6vh;
+  margin: 0;
+  line-height: 3vh;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 6vh;
+  outline: transparent;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 126, 98, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 126, 98, 0.2);
+}
+
+.button1--block {
+  display: block;
+  width: 100%;
+}
+
+.avatar {
+  display: inline-block;
+  background-color: #333333;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  padding: 2.5vh;
+  border: 4px solid white;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 126, 98, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 126, 98, 0.2);
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.avatar img {
+  margin: -2.5vh 0 0 -2.5vh;
+}
+
+.avatar img img {
+  height: 100%;
+}
+
+.avatar img img path {
+  fill: white;
+}
+
+footer {
+  overflow: hidden;
+}
+
+footer p {
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+@media (min-width: 375px) {
+  header h1 {
+    font-size: 36px;
+  }
+  header h1 .head-text p {
+    font-size: 16px;
+  }
+  header #aboutus-hero .jumbotron h2 {
+    font-size: 36px;
+  }
+  header #aboutus-hero .jumbotron h2 h3 {
+    font-size: 32px;
+  }
+  header #aboutus-hero .jumbotron h2 h3 p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 411px) {
+  #aboutus-hero .jumbotron {
+    padding: 80px 0;
+  }
+}
+
+@media (min-width: 500px) {
+  #team .card-body {
+    height: 120px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

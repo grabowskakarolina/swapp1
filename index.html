@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>swapp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="../css/main.css">
+
+
+  <link rel="stylesheet" media='screen and (min-width: 576px)' href="css/small.css">
+  <link rel="stylesheet" media='screen and (min-width: 768px)' href="css/medium.css">
+  <link rel="stylesheet" media='screen and (min-width: 992px)' href="css/large.css">
+  <script src="https://kit.fontawesome.com/7f69a4861f.js" crossorigin="anonymous">
+  </script>
+
+
+
+
+</head>
+
+
+<body data-spy="scroll" data-target="#navbar">
+
+  <nav class="navbar navbar-expand-lg navbar-expand-lg  fixed-top " id="navbar">
+    <img class="picture" src="./swapp (1).svg">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link active" href="#home">HOME </a>
+        <a class="nav-item nav-link " href="#aboutus">inicjatywa</a>
+
+
+        <a class="nav-item nav-link" href="#connect">dołącz</a>
+
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="hand-img" id="home">
+      <div class="hand-shadow"></div>
+      <div class="hand-text">
+
+
+        <p class="os-animation" data-animation="bounceInUp" data-delay="0.6s"> daj przedmiotom drugie życie</p>
+        <a class="btn btn-outline-light os-animation" data-animation="bounceInUp" data-delay="1s" href="#aboutus">poznaj
+          nas</a>
+      </div>
+      <a href="#aboutus"><i class="fas fa-chevron-down"></i> </a>
+    </div>
+  </header>
+  <main>
+
+    <section id="aboutus" class="scroll-fix">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="wrapper  ">
+          <h2>inicjatywa</h2>
+          <div class="underline"></div>
+
+          <div class="row">
+
+
+
+
+
+
+
+
+
+            <div class="col-sm-6 col-md-4 text-center about-hover os-animation " data-animation='zoomIn'
+              data-delay='.4s'>
+              <p><i class="fas fa-globe-europe"></i></p>
+
+              <h3>środowisko</h3>
+              <p>W TROSCE O PLANETĘ</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 text-center about-hover os-animation " data-animation='zoomIn'
+              data-delay='.5s'>
+              <p><i class="far fa-thumbs-up"></i></i></p>
+              <h3>REUSE</h3>
+              <p>DAJ DRUGIE ŻYCIE PRZEDMIOTOM</p>
+            </div>
+            <div class="col-sm-6 col-md-4 text-center about-hover os-animation" data-animation='zoomIn'
+              data-delay='.6s'>
+              <p><i class="fas fa-map-marker-alt"></i></p>
+              <h3>LOKALNIE</h3>
+              <p>lokalna wymiana produktów</p>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+
+    </section>
+    <!-- <section id="photo" class="scroll-fix"> -->
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/Widok.png" class="d-block w-100 h-99" alt="...">
+        </div>
+        <!-- <div class="carousel-item">
+            <img src="./img/2zdjecie.png" class="d-block w-80 h-99" alt="...">
+          
+          </div> -->
+
+      </div>
+    </div>
+    </section id="connect">
+    <section>
+      <form>
+        <div class="form-group">
+
+   
+      <div class="login-box">
+        <div class="avatar">
+          <img src="./img/ludzik.png" alt="">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M288 128H160c-35.3 0-64 28.7-64 64v16c0 61.8 50.2 112 112 112h32c61.8 0 112-50.2 112-112v-16c0-35.3-28.7-64-64-64zm32 80c0 44.1-35.9 80-80 80h-32c-44.1 0-80-35.9-80-80v-16c0-17.6 14.3-32 32-32h128c17.7 0 32 14.4 32 32v16zm-128-32l-12 36-36 12 36 12 12 36 12-36 36-12-36-12-12-36zm112 224H144c-26.5 0-48 21.5-48 48v56c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-56c0-8.8 7.2-16 16-16h160c8.8 0 16 7.2 16 16v56c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-56c0-26.5-21.5-48-48-48zm-32 48c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16zm-96 0c-8.8 0-16 7.2-16 16v40c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-40c0-8.8-7.2-16-16-16zm183.2-119.7c20.3-20.1 35.9-44.8 45.7-72.3H416c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-11.2C378.5 53.5 307.6 0 224 0S69.5 53.5 43.2 128H32c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16h11.2c9.7 27.5 25.4 52.2 45.7 72.3C37.1 347 0 396.2 0 454.4V504c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-49.6c0-51.6 38.5-94 88.3-101C150.2 372.7 185.8 384 224 384s73.8-11.3 103.7-30.6c49.8 6.9 88.3 49.3 88.3 101V504c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-49.6c0-58.2-37.1-107.4-88.8-126.1zM224 352c-88.2 0-160-71.8-160-160S135.8 32 224 32s160 71.8 160 160-71.8 160-160 160z">
+            </path>
+          </svg> -->
+        </div>
+
+        <h2>Welcome!</h2>
+        <p>Sign in to your account.</p>
+
+        <form action="/" class="form">
+          <div class="form--input-box">
+            <label for="login">Login</label>
+            <input type="text" name="login" id="login">
+          </div>
+          <div class="form--input-box">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+          </div>
+          <div class="form--options">
+            <div>
+              <a href="/">Forgot password?</a>
+            </div>
+            <div>
+              Do not have account? <a href="/">SIGN UP</a>
+            </div>
+          </div>
+
+          <button type="submit" class="button1 button--block"
+          >
+        <a href="./new/index.html">SIGN IN </a></button>
+      </div>
+      <canvas id="bg-anim"></canvas>
+  
+    </div></form>
+    </form>
+    </section>
+
+
+
+
+
+
+  </main>
+  <!-- <footer>
+    <p>
+      &copy; 2020 Karolina Grabowska
+    </p>
+  </footer> -->
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="js/animation.js"></script>
+  <script src="js/jquery.waypoints.min"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+
+
+</html>

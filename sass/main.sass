@@ -1,0 +1,545 @@
+$orange-color: #ffa400
+
+*, *::after, *::before
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  
+
+html 
+  scroll-behavior: smooth
+body 
+  position: relative
+  font-family: 'Montserrat', sans-serif
+  background-color: #dddddd
+ 
+  
+h2
+  text-transform: uppercase
+  text-align: center
+
+.blue-text
+  color: #007E62
+
+.wrapper
+  max-width: 2560px
+  width: 80%
+  margin: 0 auto
+
+.underline
+  margin: 0 auto 40px
+  width: 60px
+  height: 4px
+  background-color: #007E62
+
+.scroll-fix::before
+  display: block
+  margin-top: -66px
+  height: 66px
+  content: ''
+
+.visibility
+  visibility: hidden
+
+.jumbotron
+  margin: 0
+
+  //NAWIGACJA
+nav
+  text-transform: uppercase
+  transition: background-color .8s
+  position: relative
+  background-color: #007e62
+  height: 50px
+  
+  a,i 
+    color: silver
+    transition: color .3s
+
+  a:hover 
+    color: $orange-color
+   
+  i 
+    padding: 10px
+.picture
+  margin: 0 0 0 20px
+  width: 80px
+  height: 50px
+  vertical-align: middle
+
+
+
+.navbar-brand
+  font-weight: bold
+
+
+.shadow-bg
+  background-color: rgba(0,0 ,0 ,0.6 )
+
+
+  //header//
+
+header
+  color: silver
+  overflow: hidden
+
+  h1 
+    padding: 10px
+    text-transform: uppercase
+    font-size: 30px
+   
+
+  .hand-img 
+    position: relative
+    height: 100vh
+    background-image: url('../img/pani.jpg')
+    background-position: center
+    background-size: fixed
+    background-attachment: fixed
+    z-index: 0
+
+  .hand-shadow
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0 ,0 ,.6 )
+    z-index: -10
+  
+  .hand-text
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    height: 100%
+    text-align: center
+    text-transform: uppercase
+  
+    
+  p
+    padding: 10px
+    font-size: 20px
+
+
+  .btn-outline-light
+    text-transform: uppercase
+
+  .fa-chevron-down
+    display: none
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    font-size: 30px
+  #arow
+    display: none
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    font-size: 30px
+
+img 
+  position: relative
+  margin: 10px 
+  width: 100px
+  height: 100px
+.center-content
+aside
+  position: absolute
+  left: -300px
+  top: 0
+  width: 300px
+  height: 100vh
+  font-size: 24px
+  color: black
+  background-color: white
+  transition: .3s
+
+ul 
+  list-style: none
+  margin-top: 20px
+
+li 
+  padding: 10px 20px
+  text-transform: uppercase
+  cursor: pointer
+.active
+  left: 0
+
+
+button
+  position: absolute
+  top: 10px
+  right: 0px
+  margin: 0 30px 10px
+  padding: 10px 30px 10px
+  width: 30px
+  height: 40px
+ 
+
+// button:hover
+//   color: #3733A6
+//   box-shadow: 3px 3px 10px #3733A6
+
+    
+  // background-color: #007e62
+// MAIN
+
+
+#aboutus
+  i
+    margin-top: 20px
+    font-size: 30px
+    color: #007E62
+
+  h3
+    font-size: 18px
+    text-transform: uppercase
+
+  p
+    font-size: 14px
+
+  .about-hover
+    transition: color .3s
+    
+
+  .about-hover:hover
+    color: #3733A6
+
+  .widok
+    width: 400px
+    height: 400px
+
+#about-hero
+  color: silver
+  overflow: hidden
+
+  .jumbotron
+    position: relative
+    padding: 60px 0 
+    background-image: url('../img/ziemia.jpg')
+    background-position: center
+    background-size: cover
+    z-index: 0
+  
+    h2 
+      font-size: 32px
+      color: #dddddd
+    
+    i 
+      font-size: 35px
+      color: $orange-color
+    
+
+    p
+      font-size: 14px
+  
+
+
+  .about-shadow
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0 ,0 ,.6 )
+    z-index: -10
+
+    .about-hero-item
+      margin: 10px 0
+
+
+
+//oferta 
+#offert
+  .jumbotron
+    background-color: #f9f9f9
+
+    
+
+  .offert-wrap
+    max-width: 2560px
+    width: 90%
+    margin: 0 auto
+
+  .offert-box
+    margin: 20px 10px
+    padding: 30px
+    background-color: #ffffffa9
+    box-shadow: 5px 5px 5px rgba(0,0 ,0 ,.6 )
+    transition: transform .3s
+    
+    
+    h3 
+     
+      text-transform: uppercase
+
+    i 
+      padding: 0 5px
+      font-size: 23px
+      color: #007e62
+    
+    span 
+      font-weight: bold
+
+    button
+      padding: 10px 20px
+      text-transform: uppercase
+      .offert
+        font-size: 30px
+        font-weight: bold
+
+  .offert-box:hover
+    transform: scale(1.05)
+  .offert-text
+    margin-top: 30px
+    
+  //carusel
+.d-block
+
+  height: 90vh
+  width: 100vh
+
+
+
+  
+//login
+  $avatar-size: 15vh
+
+$color-font: #333333
+
+$color-primary: #007e62
+$color-secondary: #ffa400
+
+$color-primary-light: #007e62
+$color-secondary-light: #f3e7e9
+
+// MAIN
+
+// body 
+//   margin: 0
+//   font-family: 'Montserrat', sans-serif
+//   font-size: 16px
+//   color: $color-font
+
+
+a 
+  text-decoration: none
+  font-weight: 600
+  color: $color-primary
+
+  transition: color 200ms
+
+  &:hover
+    color: $color-secondary
+    
+#connect
+.form-group
+  margin: 0
+  height: 100vh
+  background-image: linear-gradient(to top, $color-secondary-light 0%, $color-primary-light 99%, $color-primary-light 100%)
+  overflow: hidden
+
+
+  .login-box 
+    position: relative
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    background-color: white
+    width: 400px
+    box-shadow: 0 25px 35px rgba($color-primary, 0.15)
+    text-align: center
+    box-sizing: border-box
+    padding: 11vh 5vh 7vh
+    border-radius: 10px
+
+  h2
+    margin: 0 0 0.9vh
+    font-size: 1.4rem
+    color: lighten($color-font, 10%)
+    
+
+    p 
+      margin: 0 0 3vh
+      font-size: 0.8rem
+      color: lighten($color-font, 40%)
+    
+
+
+.form
+  .form--input-box
+   
+    position: relative
+    text-align: left
+    margin: 0 2vh 3vh
+    
+
+    &::after,
+    &::before
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      height: 2px
+      background: rgba(0, 0, 0, 0.1)
+        
+      &::before
+        background-image: linear-gradient(to right, $color-secondary 0%, $color-primary 99%, $color-primary 100%)
+        right: 100%
+        z-index: 2
+
+        transition: right 500ms
+        
+
+        input 
+          width: 100%
+          border: none
+          background-color: transparent
+          font-size: 1.2rem
+          line-height: 1.9
+          outline: transparent
+          margin-top: 2vh
+        
+        label 
+          position: relative
+          top: 23px
+          font-size: 1rem
+          cursor: pointer
+
+          transition: top 200ms, font-size 200ms
+        
+
+        &.focused 
+          &::before
+            right: 0
+            
+
+            &:not(.active) label 
+              top: 0
+              font-size: 0.7rem
+            
+        
+
+        &.active 
+          label
+            top: 0
+            font-size: 0.7rem
+            
+        
+    
+
+    .form--options 
+      display: grid
+      grid-template-columns: 1fr 1.5fr
+      font-size: 0.7rem
+      text-align: left
+
+      div:last-of-type
+        text-align: right
+        
+    
+
+.button1
+  position: relative
+  width: 130px
+  height: 50px
+   
+  border: none
+  background-image: linear-gradient(to right, $color-secondary 0%, $color-primary 99%, $color-primary 100%)
+  color: white
+  font-size: 1.2rem
+  padding: 0 6vh
+  margin: 0
+  line-height: 3vh
+  border-radius: 50px
+  cursor: pointer
+  margin-top: 6vh
+  outline: transparent
+  box-shadow: 0 5px 10px rgba($color-primary, 0.2)
+
+  &--block
+    display: block
+    width: 100%
+    
+
+
+.avatar 
+  display: inline-block
+  // width: $avatar-size
+  // height: $avatar-size
+  background-color: #333333
+  box-sizing: border-box
+  border-radius: 50%
+  padding: 2.5vh
+  border: 4px solid white
+  box-shadow: 0 5px 10px rgba($color-primary, 0.2)
+  position: absolute
+  overflow: hidden
+  top: 0
+  left: 50%
+
+  transform: translate(-50%, -50%)
+
+  img
+    margin: -2.5vh 0 0 -2.5vh
+    
+
+    img
+      height: 100%
+
+      path
+        fill: white
+        
+    
+
+
+
+  
+
+//FOOTER
+footer 
+  overflow: hidden
+  p
+    color: #fff
+    padding: 20px
+    margin-bottom: 0
+    text-align: center
+    
+
+
+
+@media (min-width: 375px)
+  header
+    h1
+      font-size: 36px
+
+      .head-text
+        p
+          font-size: 16px
+
+    #aboutus-hero
+      .jumbotron
+        h2
+          font-size: 36px
+
+          h3
+            font-size: 32px
+
+            p
+              font-size: 18px
+
+  
+
+@media (min-width: 411px)
+  #aboutus-hero
+    .jumbotron
+      padding: 80px 0
+
+@media (min-width: 500px)
+  #team
+    .card-body
+      height: 120px
+
+
+
